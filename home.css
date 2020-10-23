@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 2;
+    font-size: 16px;
+    color: #3e404c;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    min-height: 60px ;
+    background-color: #ffffff;
+    color: #242b35;
+    height: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header img{
+    width: 200px;
+    margin-left: 100px;
+    padding: 10px 0 10px 0;
+}
+nav{
+    margin-left: 200px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+    color: #3e404c;
+    text-transform: uppercase;
+}
+nav a {
+    padding: 0 20px 0 20px;
+}
+.drop-content {
+    display: none;
+    background-color: #fffefb;
+    color: #0d141e;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.drop-content a{
+    display: block;
+}
+.dropdown:hover .drop-content{
+   display: block;
+}
+.btn{
+    border: none;
+    background-color: #fffefb;
+    color: #3e404c;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.drop-content a:hover{
+    background-color: #8a8b8d;
+}
+li{
+    list-style: none;
+}
+h2{
+    text-transform: uppercase;
+}
+#show{
+    background-image: url("IMG/background.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 650px;
+    align-items: center;
+    font-size: 15px;
+}
+#show h1{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+}
+main{
+    background-color: #3a424d;
+}
+#sec1 {
+    display: flex;
+    flex-direction: row;
+    color:#fffefb;
+    height: 500px;
+}
+#sec1 .box1{
+    width:30%;
+    padding: 50px 100px 50px 100px;
+}
+#sec1 .box2{
+    width:50%;
+    padding: 50px 100px 50px 100px;
+}
+#html{
+    display: flex;
+    flex-direction: row;
+}
+#html .text{
+    width:30% ;
+    background-color: #242b35;
+    color: #fffefb;
+    padding: 50px 100px 50px 100px;
+}
+#html .vid{
+    width: 70%;
+    padding: 50px 100px 50px 100px;
+    background-color: #0d141e;
+}
+iframe{
+    width: 80%;
+
+}
+#css{
+    display: flex;
+    flex-direction: row;
+}
+#css .text{
+    width:30% ;
+    background-color: #3a424d;
+    color: #fffefb;
+    padding: 50px 100px 50px 100px;
+}
+#css .vid{
+    width: 70%;
+    padding: 50px 100px 75px 100px;
+    background-color: #1d262f;
+}
+
+#js{
+    display: flex;
+    flex-direction: row;
+}
+#js .text{
+    width:30% ;
+    background-color: #242b35;
+    color: #fffefb;
+    padding: 50px 100px 50px 100px;
+}
+#js .vid{
+    width: 70%;
+    padding: 50px 100px 50px 100px;
+    background-color: #0d141e;
+}
+#blog{
+    display: flex;
+    flex-direction: column;
+    background-color: #fffefb;
+}
+#blog .text{
+    padding: 50px 100px 50px 100px;
+    width: 50%;
+}
+#blog .pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#blog .box{
+    width: 225px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#blog .box:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+#blog .container{
+    padding: 15px;
+}
+#blog img{
+    width: 100%;
+}
+#blog a{
+    color: #1d262f;
+}
+footer{
+    margin-top: 100px;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: #fffefb;
+}
+footer .box1{
+    background-color: #fe9844;
+    padding: 50px 100px 50px 100px;
+    text-align: center;
+}
+footer .box2{
+    background-color: #ff8844;
+    padding: 50px 100px 50px 100px;
+}
+footer .box3 {
+    background-color: #ff7133;
+    padding: 50px 100px 50px 100px;
+}
+footer .fac img{
+    width:85%
+}
+footer .in img{
+    width:75%;
+    margin-left: 20px;
+}
+footer .mail img{
+    width:60%;
+    margin-top: 5px;
+}
+footer .icon{
+    display: flex;;
+    flex-direction: row;
+}
+span{
+font-weight: bold;
+    color: #1d262f;
+    font-size: 20px;
+}
+footer a {
+    color: #fffefb;
+}
+footer .box1 .copyr {
+    font-size: 18px;
+    margin-top: 100px;
+    font-weight: bold;
+
+}
+
+
