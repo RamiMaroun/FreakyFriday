@@ -7,11 +7,13 @@
 </head>
 <body>
 <header>
-        <img src="IMG/logo.png" alt="logo icon">
+        <img class="logo" src="IMG/logo.png" alt="logo icon">
         <nav>
-                 <a href="">home</a>
-                 <a href="">about me</a>
-               <a href="">contact us</a>
+            <div class="navbar">
+                <a href="index.html" class="active">home</a>
+                <a href="">about me</a>
+                <a href="index.html">contact us</a>
+            </div>
             <div class="dropdown">
                 <button class="btn">
                     Resources
@@ -34,8 +36,10 @@
         </nav>
 </header>
 <div id="show">
-    <h1> Welcome to Web Design on your own</h1>
-    <h2> Learn free and be creative</h2>
+  <div class="text">
+      <h1> Welcome to Web Design on your own</h1>
+      <h2> Learn free and be creative</h2>
+  </div>
 </div>
 <main>
     <div class="container">
@@ -78,12 +82,9 @@
                     in this video. The CSS crash course will be released shortly after
                 </p>
             </div>
-            <div class="vid">
                 <iframe width="1024" height="576" src="https://www.youtube.com/embed/UB1O30fR-EE?list=RDCMUC29ju8bIPH5as8OGnQzwJyA"
                         frameborder="0" allow="accelerometer; autoplay;
                 clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
            </section>
         <section id="css">
         <div class="text">
@@ -96,11 +97,9 @@
                 want to learn flexbox.
             </p>
         </div>
-            <div class="vid">
                 <iframe width="1024" height="576" src="https://www.youtube.com/embed/yfoY53QXEnI?list=RDCMUC29ju8bIPH5as8OGnQzwJyA"
                         frameborder="0" allow="accelerometer; autoplay;
                         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
         </section>
         <section id="js">
             <div class="text">
@@ -109,11 +108,9 @@
                     syntax like classes, arrow functions, etc. This is the starting point on my channel for
                     learning JS.</p>
             </div>
-            <div class="vid">
                 <iframe width="1024" height="576" src="https://www.youtube.com/embed/hdI2bqOjy3c"
                         frameborder="0" allow="accelerometer; autoplay; clipboard-write;
                         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
         </section>
 
         <section id="blog">

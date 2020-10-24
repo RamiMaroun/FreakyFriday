@@ -5,6 +5,7 @@ body{
     line-height: 2;
     font-size: 16px;
     color: #3e404c;
+    background-color: #fffefb;
 }
 header{
     display: flex;
@@ -17,26 +18,32 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
 }
-
 header img{
     width: 200px;
     margin-left: 100px;
     padding: 10px 0 10px 0;
 }
 nav{
-    margin-left: 200px;
+    margin-left: 500px;
     margin-top: 25px;
     display: flex;
     flex-direction: row;
+}
+nav .navbar a{
+    justify-content: space-between;
+    margin-left: 30px;
+}
+a.active{
+    background-color: #fe9844;
+    color: #fffefb;
+    padding: 35px 20px 30px 20px;
 }
 a{
     text-decoration: none;
     color: #3e404c;
     text-transform: uppercase;
-}
-nav a {
-    padding: 0 20px 0 20px;
 }
 .drop-content {
     display: none;
@@ -48,6 +55,7 @@ nav a {
 }
 .drop-content a{
     display: block;
+    padding: 10px;
 }
 .dropdown:hover .drop-content{
    display: block;
@@ -58,15 +66,14 @@ nav a {
     color: #3e404c;
     text-transform: uppercase;
     font-size: 16px;
+    margin-left: 50px;
 }
 .drop-content a:hover{
-    background-color: #8a8b8d;
+    background-color: #ff7133;
+    color: #fffefb;
 }
 li{
     list-style: none;
-}
-h2{
-    text-transform: uppercase;
 }
 #show{
     background-image: url("IMG/background.jpg");
@@ -76,11 +83,13 @@ h2{
     height: 650px;
     align-items: center;
     font-size: 15px;
+    position: relative;
 }
-#show h1{
+#show .text{
     position: absolute;
-    top: 100px;
-    left: 50%;
+    top:35%;
+    left: 30%;
+    text-align: center;
 }
 main{
     background-color: #3a424d;
@@ -109,14 +118,12 @@ main{
     color: #fffefb;
     padding: 50px 100px 50px 100px;
 }
-#html .vid{
-    width: 70%;
+#html iframe{
     padding: 50px 100px 50px 100px;
     background-color: #0d141e;
 }
 iframe{
-    width: 80%;
-
+    width: 100%;
 }
 #css{
     display: flex;
@@ -128,12 +135,10 @@ iframe{
     color: #fffefb;
     padding: 50px 100px 50px 100px;
 }
-#css .vid{
-    width: 70%;
+#css iframe{
     padding: 50px 100px 75px 100px;
     background-color: #1d262f;
 }
-
 #js{
     display: flex;
     flex-direction: row;
@@ -144,8 +149,7 @@ iframe{
     color: #fffefb;
     padding: 50px 100px 50px 100px;
 }
-#js .vid{
-    width: 70%;
+#js iframe{
     padding: 50px 100px 50px 100px;
     background-color: #0d141e;
 }
@@ -215,6 +219,7 @@ footer .mail img{
 footer .icon{
     display: flex;;
     flex-direction: row;
+    margin-top: 100px;
 }
 span{
 font-weight: bold;
@@ -228,7 +233,119 @@ footer .box1 .copyr {
     font-size: 18px;
     margin-top: 100px;
     font-weight: bold;
+}
+<!---->
+@media (max-width: 1300px) {
+    nav{
+        margin-left: 200px;
+    }
+    iframe{
+        width: 90%;
+    }
+}
+@media (max-width: 1267px) {
+    iframe{
+        width: 70%;
+    }
+}
+@media (max-width: 1200px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        align-items: center;
+    }
+    #show .text{
+        top:60%;
+        left: 25%;
+    }
+    nav ,.logo {
+        margin-left: 0;
+    }
+    #sec1 .box1{
+        padding: 50px 50px 50px 50px;
+    }
+    #sec1 .box2{
+        padding: 50px 50px 50px 50px;
+    }
+    footer .box1{
+        padding: 50px 50px 50px 50px;
+    }
+    footer .box2{
+        padding: 50px 50px 50px 50px;
+    }
+    footer .box3 {
+        padding: 50px 50px 50px 50px;
+    }
 
 }
+@media (max-width: 1000px) {
+    nav ,.logo {
+        margin-left: 0;
+    }
+    #sec1 .box1{
+        padding: 25px 50px 25px 50px;
+    }
+    #sec1 .box2{
+        padding: 25px 50px 25px 50px;
+    }
+    footer .box1{
+        padding: 25px 50px 25px 50px;
+    }
+    footer .box2{
+        padding: 25px 50px 25px 50px;
+    }
+    footer .box3 {
+        padding: 25px 50px 25px 50px;
+    }
+}
+@media(max-width: 945px) {
+#sec1, #html, #css, #js, footer{
+    display: flex;
+    flex-direction: column;
+}
+    .box1, .box2{
+        width: 100%;
+    }
+    #sec1 .box1{
+        width:80%;
+    }
+    #sec1 .box2{
+        width:80%;
+    }
+    #sec1{
+        height: 700px;
+    }
+    #html .text{
+        width: 80%;
+    }
+    #html iframe{
+        width: 80%;
+    }
+    #css .text{
+        width: 80%;
+    }
+    #css iframe{
+        width: 80%;
+    }
+    #js .text{
+        width: 80%;
+    }
+    #js iframe{
+        width: 80%;
+    }
+   footer .box3{
+       width: 100%;
+   }
+    footer .icon{
+        width: 50%;
+        margin-left: 20%;
+    }
+    footer p{
+        text-align: center;
+    }
+
+}
+
 
 
