@@ -21,24 +21,15 @@ header{
     z-index: 1;
 }
 header img{
-    width: 200px;
+    width: 100px;
     margin-left: 100px;
     padding: 10px 0 10px 0;
 }
-nav{
-    margin-left: 500px;
-    margin-top: 25px;
-    display: flex;
-    flex-direction: row;
+.dropdown{
+    margin-left: 800px;
 }
-nav .navbar a{
-    justify-content: space-between;
-    margin-left: 30px;
-}
-a.active{
-    background-color: #fe9844;
-    color: #fffefb;
-    padding: 35px 20px 30px 20px;
+#show .org{
+    color: #ff7133;
 }
 a{
     text-decoration: none;
@@ -51,7 +42,7 @@ a{
     color: #0d141e;
     position: absolute;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .drop-content a{
     display: block;
@@ -62,11 +53,14 @@ a{
 }
 .btn{
     border: none;
-    background-color: #fffefb;
+    background-color: #ff7133;
+    border: #fffefb;
     color: #3e404c;
     text-transform: uppercase;
     font-size: 16px;
+    font-weight: bold;
     margin-left: 50px;
+    padding: 30px 30px 32px 30px;
 }
 .drop-content a:hover{
     background-color: #ff7133;
@@ -91,14 +85,12 @@ li{
     left: 30%;
     text-align: center;
 }
-main{
-    background-color: #3a424d;
-}
 #sec1 {
     display: flex;
     flex-direction: row;
     color:#fffefb;
     height: 500px;
+    background-color: #3a424d;
 }
 #sec1 .box1{
     width:30%;
@@ -112,18 +104,22 @@ main{
     display: flex;
     flex-direction: row;
 }
+.vid{
+    width: 100%;
+}
+iframe{
+    padding: 50px 100px 50px 100px;
+    height: 500px;
+    width: 800px;
+}
 #html .text{
     width:30% ;
     background-color: #242b35;
     color: #fffefb;
     padding: 50px 100px 50px 100px;
 }
-#html iframe{
-    padding: 50px 100px 50px 100px;
+#html .vid{
     background-color: #0d141e;
-}
-iframe{
-    width: 100%;
 }
 #css{
     display: flex;
@@ -135,8 +131,7 @@ iframe{
     color: #fffefb;
     padding: 50px 100px 50px 100px;
 }
-#css iframe{
-    padding: 50px 100px 75px 100px;
+#css .vid{
     background-color: #1d262f;
 }
 #js{
@@ -149,14 +144,14 @@ iframe{
     color: #fffefb;
     padding: 50px 100px 50px 100px;
 }
-#js iframe{
-    padding: 50px 100px 50px 100px;
+#js .vid{
     background-color: #0d141e;
 }
 #blog{
     display: flex;
     flex-direction: column;
     background-color: #fffefb;
+    margin-bottom: 20px;
 }
 #blog .text{
     padding: 50px 100px 50px 100px;
@@ -187,7 +182,6 @@ iframe{
 }
 footer{
     margin-top: 100px;
-    color: black;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     color: #fffefb;
@@ -205,26 +199,23 @@ footer .box3 {
     background-color: #ff7133;
     padding: 50px 100px 50px 100px;
 }
+footer ul{
+    margin-left: -50px;
+}
 footer .fac img{
-    width:85%
+    width:60%
 }
 footer .in img{
-    width:75%;
+    width:60%;
     margin-left: 20px;
 }
 footer .mail img{
-    width:60%;
     margin-top: 5px;
 }
-footer .icon{
-    display: flex;;
+footer .icon {
+    display: flex;
     flex-direction: row;
     margin-top: 100px;
-}
-span{
-font-weight: bold;
-    color: #1d262f;
-    font-size: 20px;
 }
 footer a {
     color: #fffefb;
@@ -234,33 +225,29 @@ footer .box1 .copyr {
     margin-top: 100px;
     font-weight: bold;
 }
+#show, main, footer{
+    overflow: hidden;
+}
+footer span{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0d141e;
+}
 <!---->
 @media (max-width: 1300px) {
-    nav{
-        margin-left: 200px;
-    }
     iframe{
-        width: 90%;
+        width: 80%;
     }
 }
-@media (max-width: 1267px) {
-    iframe{
-        width: 70%;
+@media (max-width: 1229px) {
+    .dropdown{
+        margin-left: 550px;
     }
 }
 @media (max-width: 1200px) {
-    header{
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-        align-items: center;
-    }
     #show .text{
         top:60%;
         left: 25%;
-    }
-    nav ,.logo {
-        margin-left: 0;
     }
     #sec1 .box1{
         padding: 50px 50px 50px 50px;
@@ -277,12 +264,14 @@ footer .box1 .copyr {
     footer .box3 {
         padding: 50px 50px 50px 50px;
     }
-
+    a.active{
+        padding: 10px 10px 10px 10px;
+    }
 }
 @media (max-width: 1000px) {
-    nav ,.logo {
-        margin-left: 0;
-    }
+.dropdown{
+    margin-left: 400px;
+}
     #sec1 .box1{
         padding: 25px 50px 25px 50px;
     }
@@ -304,9 +293,6 @@ footer .box1 .copyr {
     display: flex;
     flex-direction: column;
 }
-    .box1, .box2{
-        width: 100%;
-    }
     #sec1 .box1{
         width:80%;
     }
@@ -343,9 +329,230 @@ footer .box1 .copyr {
     }
     footer p{
         text-align: center;
+        width: 80%;
+    }
+}
+#sec1{
+    height: 950px;
+}
+footer .box1{
+    padding: 15px 25px 15px 25px;
+}
+footer .box2{
+    padding: 15px 25px 15px 25px;
+}
+footer .box3 {
+    padding: 15px 25px 15px 25px;
+}
+footer .mail img{
+    width:40%;
+    margin-top: 5px;
+}
+@media(max-width: 850px) {
+    #show .text{
+        left: 20%;
+    }
+    .dropdown{
+        margin-left: 300px;
+    }
+}
+@media(max-width: 750px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+    header img {
+        margin-left: 40%;
+    }
+    .dropdown{
+        margin-left: 30%;
+    }
+    .btn{
+        padding: 20px;
+    }
+    #show .text{
+        left: 10%;
+    }
+    #blog .pic{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+    }
+    #blog .pic .box{
+        margin-top: 20px;
+    }
     }
 
+
+@media(max-width: 650px) {
+    #show .text{
+        left: 5%;
+    }
+    iframe{
+        padding: 50px 10px 50px 50px ;
+    }
 }
+@media (max-width: 545px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+   .navbar a{
+        display: block;
+    }
+    a.active{
+        padding: 10px 2px 10px 2px;
+    }
+    .btn{
+        margin-left: 20px;
+    }
+    #blog .pic{
+        margin-left: 25%;
+    }
+    #html .text, #css .text, #js .text{
+        padding: 50px 60px 50px 50px;
+    }
+    #blog .text{
+        padding: 50px 20px 50px 20px;
+        width: 90%;
+    }
+}
+@media(max-width: 500px) {
+    footer .fac img{
+        width:90%
+    }
+    footer .in img{
+        width:90%;
+        margin-left: 15px;
+    }
+    footer .mail img{
+        width:60%;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 482px) {
+    #sec1{
+        height: 1050px;
+    }
+}
+@media (max-width: 450px) {
+    footer .fac img{
+        width:70%
+    }
+    footer .in img{
+        width:70%;
+        margin-left: 10px;
+    }
+    footer .mail img{
+        width:55%;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 424px) {
+    #sec1{
+        height: 1250px;
+    }
+}
+@media (max-width: 400px) {
+    footer .box1{
+        padding: 15px 10px 15px 10px;
+    }
+}
+@media (max-width: 372px) {
+    footer .icon{
+        display: block;
+        padding: 1px;
+    }
+    footer .bo1{
+        height: 200px;
+    }
+    header img {
+        margin-left: 35%;
+    }
+    .dropdown{
+        margin-left: 20%;
+    }
+}
+@media(max-width:320px) {
+    #show .text{
+        top: 50%;
+    }
+    #sec1{
+        height: 1350px;
+    }
+    #blog .pic{
+        margin-left: 15%;
+    }
+}
+@media(max-width:293px) {
+    #sec1{
+        height: 1450px;
+    }
+    #blog .pic{
+        margin-left: 10%;
+    }
+}
+@media(max-width:285px) {
+    #sec1{
+        height: 1550px;
+    }
+    iframe{
+        padding: 50px 10px 50px 25px ;
+    }
+    #blog .pic{
+        margin-left:5%;
+    }
+}
+@media(max-width:263px) {
+    #sec1{
+        height: 1700px;
+    }
+    #html .text, #css .text, #js .text{
+            padding: 10px 40px 10px 20px;
+    }
+    #blog .box{
+        width: 200px;
+    }
+    header img {
+        margin-left: 25%;
+    }
+    .dropdown{
+        margin-left: 10%;
+    }
+}
+@media(max-width:229px) {
+    #sec1{
+        height: 1900px;
+    }
+    #blog .box{
+        width: 150px;
+    }
+}
+@media(max-width:202px) {
+    #sec1{
+        height: 2200px;
+    }
+    header img {
+        margin-left: 25%;
+    }
+    .dropdown{
+        margin-left: 5%;
+    }
+}
+@media(max-width:190px) {
+
+    header img {
+        margin-left: 20%;
+    }
+    .dropdown{
+        margin-left: 1%;
+    }
+    .btn{
+        padding: 10px;
+    }
+}
+
 
 
 

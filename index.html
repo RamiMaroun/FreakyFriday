@@ -4,20 +4,16 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header>
-        <img class="logo" src="IMG/logo.png" alt="logo icon">
-        <nav>
-            <div class="navbar">
-                <a href="index.html" class="active">home</a>
-                <a href="">about me</a>
-                <a href="index.html">contact us</a>
-            </div>
-            <div class="dropdown">
-                <button class="btn">
-                    Resources
-                </button>
+             <img src="IMG/logo.png" alt="logo icon">
+            <nav>
+                <div class="dropdown">
+                    <button class="btn">
+                     Resources
+                    </button>
                 <div class="drop-content" >
                     <a href="https://youtu.be/UB1O30fR-EE?list=RDCMUC29ju8bIPH5as8OGnQzwJyA"
                        target="_blank">link for html video</a>
@@ -37,12 +33,11 @@
 </header>
 <div id="show">
   <div class="text">
-      <h1> Welcome to Web Design on your own</h1>
-      <h2> Learn free and be creative</h2>
+      <h1><span class="org"> Welcome</span> to Web Design on your own</h1>
+      <h2> <span class="org">Learn free and be creative </span></h2>
   </div>
 </div>
 <main>
-    <div class="container">
         <section id="sec1">
             <div class="box1">
                 <h3>Can You Learn Web Design On Your Own?</h3>
@@ -70,8 +65,8 @@
 
             </div>
         </section>
-
         <section id="html">
+
             <div class="text">
                 <h2>Learn HTML</h2>
                 <p>
@@ -82,9 +77,12 @@
                     in this video. The CSS crash course will be released shortly after
                 </p>
             </div>
-                <iframe width="1024" height="576" src="https://www.youtube.com/embed/UB1O30fR-EE?list=RDCMUC29ju8bIPH5as8OGnQzwJyA"
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/UB1O30fR-EE?list=RDCMUC29ju8bIPH5as8OGnQzwJyA"
                         frameborder="0" allow="accelerometer; autoplay;
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
            </section>
         <section id="css">
         <div class="text">
@@ -97,9 +95,12 @@
                 want to learn flexbox.
             </p>
         </div>
-                <iframe width="1024" height="576" src="https://www.youtube.com/embed/yfoY53QXEnI?list=RDCMUC29ju8bIPH5as8OGnQzwJyA"
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/yfoY53QXEnI?list=RDCMUC29ju8bIPH5as8OGnQzwJyA"
                         frameborder="0" allow="accelerometer; autoplay;
-                        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        clipboard-write; encrypted-media; gyroscope;
+                         picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
         <section id="js">
             <div class="text">
@@ -108,11 +109,13 @@
                     syntax like classes, arrow functions, etc. This is the starting point on my channel for
                     learning JS.</p>
             </div>
-                <iframe width="1024" height="576" src="https://www.youtube.com/embed/hdI2bqOjy3c"
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/hdI2bqOjy3c"
                         frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
         </section>
-
         <section id="blog">
             <div class="text">
                 <h2> blog</h2>
@@ -122,7 +125,6 @@
                     design, help you avoid common web design mistakes, and teach you the latest and best practices
                     in designing websites.
                 </p>
-
             </div>
             <div class="pic">
                 <div class="box">
@@ -138,10 +140,10 @@
                         <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">
                             <img src="IMG/css.jpg" alt="css icon">
                             <div class="container">
-                            <p> Learn more about CSS</p>
-                            <p>Read more</p>
+                                <p> Learn more about CSS</p>
+                                <p>Read more</p>
                              </div>
-                </a>
+                        </a>
                     </div>
                 <div class="box">
                     <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank">
@@ -154,13 +156,11 @@
                 </div>
     </div>
         </section>
-
-    </div>
-
 </main>
+
 <footer>
     <div class="box1">
-        <span><p>Contact Us</p> </span>
+        <span>Contact Us </span>
         <div class="icon">
             <div class="fac">
                 <a href="https://www.facebook.com/" target="_blank">
@@ -177,12 +177,11 @@
                     <img src="IMG/email.png" alt="email icon">
                 </a>
             </div>
-
         </div>
         <p class="copyr"> Rami Maroun &COPY;2020</p>
         </div>
     <div class="box2">
-        <span><p>About me</p></span>
+        <span>About me</span>
         <p> I am a  data ingeneer student in Oslomet in the frist year.
             This is my second project for web development in the Autumn semester of 2020.
             In this project, I use many resources such as videos from youtube, information from other pages,
@@ -191,7 +190,7 @@
         </p>
     </div>
     <div class="box3">
-        <span><p>Resources</p></span>
+        <span>Resources</span>
         <ul>
             <li> <a href="https://www.pexels.com/search/free%20download/" target="_blank">
                 Bakround-image</a></li>
