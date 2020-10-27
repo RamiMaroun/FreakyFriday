@@ -233,6 +233,9 @@ footer span{
     font-weight: bold;
     color: #0d141e;
 }
+ul a:hover{
+    color: #242b35;
+}
 <!---->
 @media (max-width: 1300px) {
     iframe{
